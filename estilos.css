@@ -2,7 +2,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
+header{
+    height: 5em;
+    background-color: rgb(69, 71, 95);
+    font-size: 20px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
 
+.logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.lista li a{
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.lista li a:hover{
+    color: #33c7cccc;
+    transform: scale(1.1); /*No puedo hacer el mismo efecto que logre en el logo con las listas, por que es?*/
+    
+}
+
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #121213d0;
+    display: flex;
+    background-image: url(imagenes/diente_particula.jpg);
+}
+
+.call{
+    width: 50%;
+    height: 50%;
+    margin: 25px;
+}
+.call h1{
+    text-align: left;
+    padding: 15px;
+}
+.call p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+
+.call a{
+    color: #3d5deb;
+    font-weight: bold;
+    border: solid 2px rgb(54, 123, 212);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+.call a:hover{
+    background-color: #0c77be;
+    color: #000;
+    border-color: #0c77be;
+    box-shadow: 6px 5px 15px;
+}
+
+footer{
+    height: 4em;
+    background-color: rgb(28, 43, 61);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div{
+    padding: 3px;
+}
+
+.derechos{
+    font-size: 15px;
+}
+
+.redes a:visited {
+    color: rgb(23, 173, 173);
+}
+
+/* Como puedo hacer para posicionar el div Derechos en la parte izquierda y abajo del footer? la unica forma que encuentro de poder hacer eso es con margin-right:auto; de todas formas no lo use en esta ocasion */
