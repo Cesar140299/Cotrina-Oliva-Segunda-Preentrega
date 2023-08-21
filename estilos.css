@@ -47,8 +47,8 @@ header{
     
 }
 
-main{
-    height: calc(100vh - 80px);
+.home{
+    height: calc(100vh - 5em);
     width: 100%;
     background-color: #121213d0;
     display: flex;
@@ -110,3 +110,715 @@ footer div{
 }
 
 /* Como puedo hacer para posicionar el div Derechos en la parte izquierda y abajo del footer? la unica forma que encuentro de poder hacer eso es con margin-right:auto; de todas formas no lo use en esta ocasion */
+
+
+
+
+/* ESTILOS PAGINA NOSOTROS */
+
+.nosotros{
+    height: calc(100vh - 5em);
+    width: 100%;
+    background-color: #121213d0;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(imagenes/fondo\ profesionales.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.nosotros div{
+    width: 50%;
+    height: 50%;
+    margin: 50px;
+}
+
+.nosotros div h2{
+    font-size: 3em;
+    padding-bottom: 0.7em;
+}
+
+.nosotros div p{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.nosotros div a{
+    font-size: 1.7em;
+}
+
+.nosotros div a:visited {
+    color: rgb(23, 173, 173)
+}
+
+.nosotros div a:hover{
+    color: #000;
+    background-color: #1697a8;
+    border-radius: 5px;
+    box-shadow: 6px 5px 15px;
+}
+
+.dra__nelly{
+    height: 100vh;
+    width: 100%;
+}
+
+.galeria{
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    transition: all 1s;
+}
+
+.dra__nelly--imagen{
+    background-image: url(imagenes/dientes\ flores\ azules\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 4/6;
+    grid-row: 1/4;
+    filter: grayscale(80%);
+    transition: all 0.8s;
+}
+
+.dra__nelly--imagen:hover{
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.dra__nelly--titulo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+.dra__nelly--estudios{
+    grid-column: 1/4;
+    grid-row: 2/4; 
+} 
+
+
+.dra__nelly--estudios ul li{ 
+    font-size: 25px;
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+.dra__nelly--estudios ul li:hover{
+    transform: scale(1.08);
+    color: #088fa3;
+}
+
+.dr__cesar{
+    height: 100vh;
+    width: 100%;
+}
+
+.dr__cesar--imagen{
+    background-image: url(imagenes/mandibla\ flores\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 4/6;
+    grid-row: 1/4;
+    filter: grayscale(80%);
+    transition: all 0.8s;
+}
+
+.dr__cesar--imagen:hover {
+    filter: grayscale(5%);
+    transform: scale(1.08);
+}
+
+.dr__cesar--titulo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.dr__cesar--estudios{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+.dr__cesar--estudios ul li{
+    font-size: 25px;
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+.dr__cesar--estudios ul li:hover {
+    transform: scale(1.08);
+    color: #088fa3;
+}
+
+
+
+/* ESTILOS PAGINA SERVICIOS */
+
+.servicios{
+    height: calc(100vh - 5em);
+    width: 100%;
+}
+
+
+
+.servicios__galeria{
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    transition: all 1s
+}
+
+
+.servicios__galeria--imagen{
+    background-image: url(imagenes/diente\ dorado\ con\ flores\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 4/6;
+    grid-row: 1/4;
+}
+
+.servicios__galeria--titulo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px 10px 5px 10px;
+}
+
+.servicios__galeria--trabajos{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+.servicios__galeria--trabajos li{
+    font-size: 25px;
+    padding: 7px 7px 7px 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.servicios__galeria--trabajos li a:link{
+    color: black;
+}
+.servicios__galeria--trabajos li a:visited{
+    color: black;
+}
+
+.servicios__galeria--trabajos li a:hover {
+    transform: scale(1.2);
+    padding-left: 20px;
+    color: #088fa3;
+}
+
+.ciru{
+    height: 100vh;
+    width: 100%;
+}
+.ciru__galeria{
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.ciru__galeria--imagen{
+    background-image: url(imagenes/heramientas\ con\ flores\ ciru\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    filter: grayscale(50%);
+    transition: all 0.8s;
+}
+
+.ciru__galeria--imagen:hover{
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.ciru__galeria--titulo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px
+}
+.ciru__galeria--texto{
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ciru__galeria--texto a{
+    margin: 50px
+}
+
+.comunicacion {
+    display: inline-block;
+    width: 150px;
+    font-size: 25px;
+}
+
+.comunicacion:visited{
+    color: #000;
+}
+.comunicacion:link{
+    color: #000;
+}
+
+.comunicacion:hover{
+    transform: scale(1.08);
+    background-color: #088fa3;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px;
+}
+
+
+.perio{
+    height: 100vh;
+    width: 100%;
+}
+
+.perio__galeria{
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.perio__galeria--imagen{
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/herramientas\ con\ flores\ perio\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.perio__galeria--imagen:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.perio__galeria--titulo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;   
+}
+
+.perio__galeria--texto{
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.perio__galeria--texto a{
+    margin-top: 50px;
+}
+
+
+
+.endo {
+    height: 100vh;
+    width: 100%;
+}
+
+.endo__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.endo__galeria--imagen {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/endo\ flores\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.endo__galeria--imagen:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.endo__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.endo__galeria--texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.endo__galeria--texto a {
+    margin-top: 50px;
+}
+
+
+
+
+
+.protesis {
+    height: 100vh;
+    width: 100%;
+}
+
+.protesis__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.protesis__galeria--imagen {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/protesis\ flores\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.protesis__galeria--imagen:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.protesis__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.protesis__galeria--texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.protesis__galeria--texto a {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.estomato {
+    height: 100vh;
+    width: 100%;
+}
+
+.estomato__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.estomato__galeria--imagen {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/microscopio\ con\ flores\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.estomato__galeria--imagen:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.estomato__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.estomato__galeria--texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.estomato__galeria--texto a {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+.estetica {
+    height: 100vh;
+    width: 100%;
+}
+
+.estetica__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.estetica__galeria--imagen {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/revision\ dental\ flores\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.estetica__galeria--imagen:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.estetica__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.estetica__galeria--texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.estetica__galeria--texto a {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+.cod {
+    height: 100vh;
+    width: 100%;
+}
+
+.cod__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cod__galeria--imagen {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/herramientas\ para\ cod\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.cod__galeria--imagen:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.cod__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.cod__galeria--texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cod__galeria--texto a {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.ortodoncia {
+    height: 100vh;
+    width: 100%;
+}
+
+.ortodoncia__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.ortodoncia__galeria--imagen {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    background-image: url(imagenes/sonrisa\ flores\ rojas\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.ortodoncia__galeria--imagen:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.ortodoncia__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.ortodoncia__galeria--texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ortodoncia__galeria--texto a {
+    margin-top: 50px;
+}
+
+
+
+.subir{
+    height: 40px;
+    width: 40px;
+    color: #000;
+    background-color: #0c8da3;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
