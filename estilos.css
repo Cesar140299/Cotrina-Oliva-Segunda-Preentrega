@@ -5,8 +5,8 @@
     text-decoration: none;
 }
 
-header{
-    height: 5em;
+.header{
+    min-height: 5em;
     background-color: rgb(69, 71, 95);
     font-size: 20px;
     padding: 15px;
@@ -53,6 +53,7 @@ header{
     background-color: #121213d0;
     display: flex;
     background-image: url(imagenes/diente_particula.jpg);
+
 }
 
 .call{
@@ -87,8 +88,8 @@ header{
     box-shadow: 6px 5px 15px;
 }
 
-footer{
-    height: 4em;
+.footer{
+    min-height: 4em;
     background-color: rgb(28, 43, 61);
     font-size: 22px;
     display: flex;
@@ -97,15 +98,23 @@ footer{
     flex-direction: column;
 }
 
-footer div{
+.footer div{
     padding: 3px;
+}
+
+.seguinos p{
+    color: #000;
 }
 
 .derechos{
     font-size: 15px;
+    color: #000;
 }
 
 .redes a:visited {
+    color: rgb(23, 173, 173);
+}
+.redes a:link {
     color: rgb(23, 173, 173);
 }
 
@@ -160,7 +169,7 @@ footer div{
 }
 
 .dra__nelly{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -174,6 +183,7 @@ footer div{
 }
 
 .dra__nelly--imagen{
+    min-height: 100vh;
     background-image: url(imagenes/dientes\ flores\ azules\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -218,11 +228,12 @@ footer div{
 }
 
 .dr__cesar{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
 .dr__cesar--imagen{
+    min-height: 100vh;
     background-image: url(imagenes/mandibla\ flores\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -288,11 +299,12 @@ footer div{
 
 
 .servicios__galeria--imagen{
-    background-image: url(imagenes/diente\ dorado\ con\ flores\ sin\ fondo.png);
+    background-image: url(imagenes/diente\ cubierto\ de\ flores\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
     grid-column: 4/6;
     grid-row: 1/4;
+    filter: grayscale(50%);
 }
 
 .servicios__galeria--titulo{
@@ -346,6 +358,7 @@ footer div{
     background-image: url(imagenes/heramientas\ con\ flores\ ciru\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     grid-column: 4/6;
     grid-row: 1/-1;
     filter: grayscale(50%);
@@ -423,6 +436,7 @@ footer div{
     background-image: url(imagenes/herramientas\ con\ flores\ perio\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -477,6 +491,7 @@ footer div{
     background-image: url(imagenes/endo\ flores\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -533,6 +548,7 @@ footer div{
     background-image: url(imagenes/protesis\ flores\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -590,6 +606,7 @@ footer div{
     background-image: url(imagenes/microscopio\ con\ flores\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -648,6 +665,7 @@ footer div{
     background-image: url(imagenes/revision\ dental\ flores\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -706,6 +724,7 @@ footer div{
     background-image: url(imagenes/herramientas\ para\ cod\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -763,6 +782,7 @@ footer div{
     background-image: url(imagenes/sonrisa\ flores\ rojas\ sin\ fondo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     filter: grayscale(70%);
     transition: all 0.8s;
 }
@@ -812,13 +832,234 @@ footer div{
     border-radius: 15px;
 }
 
+/* Estilos Pagina Ubicacion Utilizando Bootstrap */
+
+.navbar{
+    height: 80px;
+    background-color: rgb(69, 71, 95); 
+}
+.img-navbar{
+    height: 75px;
+}
+
+
+.ubicacion{
+    height: calc(100vh - 80px);
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.ubicacion__imagen{
+    background-image: url(imagenes/diente\ colibri\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+    filter: grayscale(70%);
+    transition: all 0.8s;
+}
+
+.ubicacion__imagen:hover{
+    filter: grayscale(8%);
+    transform: scale(1.2);
+}
+.ubicacion__titulo{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapa{
+    width: 70%;
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    border: #000 solid 2px;
+    margin: 50px;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+/* Estilos Pagina Contacto */
+
+.contacto {
+    height: calc(100vh - 5em);
+    width: 100%;
+}
 
 
 
+.contacto__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
 
 
+.contacto__galeria--imagen {
+    background-image: url(imagenes/simbolo\ de\ medicina\ flores\ azules\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 4/6;
+    grid-row: 1/4;
+    transition: all 0.8s
+}
+
+.contacto__galeria--imagen:hover{
+    transform: scale(1.1);
+
+}
+
+.contacto__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+    padding: 10px 10px 5px 10px;
+}
 
 
+.contacto__galeria--formulario {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 20px;
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+textarea:hover {
+    background-color: #088ea32a;
+}
+input:hover {
+    background-color: #088ea32a;
+}
+
+/* Responsive Home */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .lista{
+        padding: 2px;
+        flex-wrap: wrap;
+    }
+    .home{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .call{
+    padding-left: 5px;
+    }
+}
+
+/* Responsive Sobre Nosotros */
+
+@media only screen and (min-width: 0) and (max-width: 576px){
+    .nosotros div h2{
+        font-size: 35px;
+    }
+    .dra__nelly--titulo{
+        font-size: 25px;
+        
+    }
+    
+    .dra__nelly--estudios {
+    font-size: 15px;
+    padding: 2px;
+    margin: 2px;
+    }
+
+    .dr__cesar--estudios {
+    font-size: 15px;
+    }
+    
+    .dr__cesar--titulo{
+    font-size: 25px;
+    }
 
 
+}
 
+/* Responsive Servicios */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .servicios__galeria--titulo{
+        font-size: 35px;
+    }
+    .servicios__galeria--trabajos li{
+        font-size: 22px;
+    }
+
+
+    .ciru__galeria--imagen, .perio__galeria--imagen, .endo__galeria--imagen,
+    .protesis__galeria--imagen, .estomato__galeria--imagen, .estetica__galeria--imagen, 
+    .cod__galeria--imagen, .ortodoncia__galeria--imagen {
+        filter: grayscale(10%);
+        }
+
+    .ciru__galeria--titulo,  .perio__galeria--titulo, .endo__galeria--titulo, 
+    .protesis__galeria--titulo, .estomato__galeria--titulo, .estetica__galeria--titulo, 
+    .cod__galeria--titulo, .ortodoncia__galeria--titulo {
+        font-size: 30px;
+    }
+    .ciru__galeria--texto, .perio__galeria--texto, .endo__galeria--texto, 
+    .protesis__galeria--texto, .estomato__galeria--texto, .estetica__galeria--texto, 
+    .cod__galeria--texto, .ortodoncia__galeria--texto{
+        font-size: 20px;
+        }
+
+    .comunicacion{
+        font-size: 20px;
+    }
+
+}
+
+/* Responsive Ubicacion */
+
+@media only screen and (min-width: 0) and (max-width: 576px){
+    .navbar-collapse{
+        background-color: rgb(69, 71, 95);
+        justify-content: center !important;
+    }
+    .ubicacion__titulo{
+        align-items: flex-end;
+        margin-top: 120px;
+        padding-top: 100px; 
+    }
+
+}
+
+/* Responsive Contacto */
+@media only screen and (min-width: 0) and (max-width: 576px){
+    form {
+    width: 100%;
+}
+
+}
